@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center  mt-5 mb-5">
-    <h1 class="mt-5 fw-bolder text-success "> Database with Advance Filter in vueJS 3 </h1>
+    <h1 class="mt-5 fw-bolder text-success "> {{getAppTitle}} </h1>
     <div class="table-responsive my-5">
       <!-- The table component -->
       <Table></Table>
@@ -11,14 +11,18 @@
 <script>
 // Importing the table component
 import Table from './components/table.vue'
+import { mapGetters } from "vuex";
+
 export default {
   name: 'App',
   components: {
     Table
   },
-  setup() {
-    //An array of values for the data
-  },
+  computed: {
+    ...mapGetters([
+      "getAppTitle",
+    ]),
+  }
 }
 </script>
 
