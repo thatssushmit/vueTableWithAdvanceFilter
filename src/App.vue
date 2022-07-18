@@ -1,26 +1,34 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="container text-center  mt-5 mb-5">
+    <h1 class="mt-5 fw-bolder text-success "> Database with Advance Filter </h1>
+    <div class="table-responsive my-5">
+      <!-- The table component -->
+      <Table></Table>
+    </div>
+
+  </div>
 </template>
-
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+// Importing the table component
+import Table from './components/table.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Table
+  },
+  setup() {
+    //An array of values for the data
+  },
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+ <style>
+   body {
+     min-height: 700px;
+   }
+ 
+   smart-grid {
+     width: 100%;
+     height: auto;
+   }
+ </style> 
