@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center  mt-5 mb-5">
-    <h1 class="mt-5 fw-bolder text-success "> {{getAppTitle}} </h1>
+    <h1 class="mt-5 fw-bolder text-success "> DataTable with Advance Filter in vueJS 3 </h1>
     <div class="table-responsive my-5">
       <!-- The table component -->
       <Table></Table>
