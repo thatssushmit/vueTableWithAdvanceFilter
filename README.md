@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Current domain for this project 
+
+https://vue-table-with-advance-filter.vercel.app/
